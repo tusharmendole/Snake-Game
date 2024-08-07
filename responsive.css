@@ -1,0 +1,99 @@
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */  
+    }
+    .body{
+        background: linear-gradient(rgb(190, 174, 210), rgb(98, 56, 126), rgb(221, 66, 252)); 
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #scoreBox{
+        position: absolute;
+        top: 9px;
+        right: 140px;
+        font-size: 29px;
+        font-weight: bold;
+        font-family: "cursive",'New Tegomin', serif;
+    }
+
+    #hiscoreBox{
+        position: absolute;
+        top: 59px;
+        right: 115px;
+        font-size: 29px;
+        font-weight: bold;
+        font-family: "cursive",'New Tegomin', serif;
+    }
+
+    #board{
+        /* background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167)); */
+        background-image: url("Snake.jpg");
+        border-radius: 5px;
+        background-size:cover;
+        margin-bottom: 25vh;
+        position: relative;
+        left: 25px;
+        width: 150vh;
+        height: 390px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-columns: repeat(18, 1fr);
+    }
+
+    .head{
+        background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+        border: 2px solid rgb(34, 4, 34); 
+        transform: scale(1.02);
+        border-radius: 5px;
+    }
+
+    .snake{
+        background-color: purple;
+        border: .25vmin solid white;
+        border-radius: 1px;
+    }
+    .food{
+        background: linear-gradient(red, purple);
+        border: .25vmin solid black;
+        border-radius: 5px;
+    }
+    
+    .controls{
+        height: 220px;
+        width: 220px;
+        rotate: 90Deg;
+        /* background-color: black; */
+        border-radius: 5px;
+        position: relative;
+        top: 18vh;
+        right: 19.5vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .controls button{
+        background:linear-gradient(rgb(66, 66, 65), rgb(41, 30, 48), rgb(31, 64, 63)) ; 
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        border: 1.5px solid white;
+        border-radius: 8px;
+        rotate: -90Deg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+
+    }
+
+    
+  }
+  
+  
